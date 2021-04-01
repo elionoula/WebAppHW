@@ -1,5 +1,5 @@
 version: "2"
-sevices:
+services:
     app:
       build: ./app
       container_name: "Flask_App"
