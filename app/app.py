@@ -34,6 +34,7 @@ def index():
 
     return render_template('index.html', title='Home', user=user, cities=cities_data)
 
+
 @app.route('/api/cities')
 def cities() -> str:
     js = json.dumps(cities_import())
@@ -43,4 +44,3 @@ def cities() -> str:
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
-
